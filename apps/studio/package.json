@@ -1,0 +1,45 @@
+{
+  "name": "@ai-manju/studio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "seed:demo": "tsx scripts/seed-demo.ts",
+    "seed:shenjin": "tsx scripts/seed-shenjin-validation.ts",
+    "inspect:assets": "tsx scripts/list-assets.ts",
+    "inspect:wan": "tsx scripts/inspect-wan-readiness.ts",
+    "seed:benchmark": "tsx scripts/seed-benchmark-suite.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-manju/db": "workspace:*",
+    "@ai-manju/domain": "workspace:*",
+    "@ai-manju/execution": "workspace:^",
+    "@ai-manju/storage": "workspace:*",
+    "@tanstack/react-query": "5.104.0",
+    "bullmq": "^5.61.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
+    "lucide-react": "^0.468.0",
+    "next": "^15.5.2",
+    "radix-ui": "1.6.7",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "tailwind-merge": "^3.7.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "^20.19.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "tailwindcss": "4.3.3",
+    "tsx": "^4.19.3",
+    "vitest": "^3.2.4"
+  }
+}

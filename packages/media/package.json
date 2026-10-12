@@ -1,0 +1,24 @@
+{
+  "name": "@ai-manju/media",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ai-manju/domain": "workspace:*",
+    "zod": "^3.24.4"
+  },
+  "devDependencies": {
+    "vitest": "^3.2.4"
+  }
+}
